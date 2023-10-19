@@ -1,0 +1,11 @@
+[Unit]
+Description=EtherPad Web service
+After=default.target
+
+[Service]
+WorkingDirectory=/home/ubuntu/ubuntu_script/etherpad-lite
+ExecStart=/usr/bin/node src/node/server.js
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
